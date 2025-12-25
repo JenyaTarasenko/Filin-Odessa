@@ -1,0 +1,16 @@
+# Разрешаем всем поисковым роботам индексировать сайт
+User-agent: *
+
+# Запрещаем доступ к административной панели и виртуальному окружению
+Disallow: /admin/
+Disallow: /venv/
+
+
+# Разрешаем доступ к статике (favicon, CSS, JS, картинки)
+Allow: /static/
+
+# Разрешаем всё остальное
+Allow: /
+
+# Sitemap для поисковых систем
+Sitemap: https://filin-evakuator.od.ua/sitemap.xml
