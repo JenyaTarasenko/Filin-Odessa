@@ -78,7 +78,7 @@ export default function Cards() {
                     <img src={FireTruck} alt="FireTruck" className="p-5" loading="lazy" />
                 </div>
                 <h2 className="p-5 text-xl font-normal text-gray-900 max-w-[300px]">
-                    Современный эвакуатор
+                    Современный эвакуатор, быстрая подача
                 </h2>
             </motion.div>
 

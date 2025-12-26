@@ -14,6 +14,8 @@ import Questions from '../../components/Questions/Questions';
 import Map from '../../components/Map/Map';
 import Footer from '../../components/Footer/Footer';
 import FloatingContacts from '../../components/FloatingContacts/FloatingContacts';
+import LineBanner from '../../components/LinerBanner/LinerBanner';
+import RoadLine from '../../components/RoadLine/RoadLine';
 
 function HomePage() {
     return (
@@ -21,6 +23,7 @@ function HomePage() {
             <NavBar />
             <HeroSection />
             <PriceHero />
+            <RoadLine />
             <div className='flex justify-center'>
                 <ButtonRed to="tel:+380663642781" className='mt-10'>Расчитать стоимость</ButtonRed>
             </div>
@@ -28,6 +31,7 @@ function HomePage() {
             <BastCard />
             <SectionStyle number="01" title="Почему с нами  безопасно и камфортно" />
             <BastSafely />
+            <LineBanner />
             <SectionStyle number="02" title="Мы работаем со всеми видами транспорта" />
             <CardPrime />
             <div className='flex justify-center'>
@@ -40,10 +44,12 @@ function HomePage() {
             <div className='flex justify-center'>
                 <ButtonRed to="tel:+380663642781" className='mt-10'>Вызвать эвакуатор</ButtonRed>
             </div>
+            <LineBanner />
             <SectionStyle number="05" title="Карта эвакуатора Filin" />
             <Map />
             <SectionStyle number="06" title="Вопросы и ответы" />
             <Questions />
+            <RoadLine />
             <Footer />
             <FloatingContacts />
         </>

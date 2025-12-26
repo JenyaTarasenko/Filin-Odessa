@@ -41,7 +41,7 @@ function PriceCard() {
                             <h2 className="text-xl font-bold max-w-[250px] uppercase">Легковые авто и мототехника</h2>
                             <h3 className="text-gray-600 max-w-[300px] uppercase mt-2 text-sm">Легковые автомобили Мотоциклы, квадроциклы, мотоколяски</h3>
                             <h4 className="">Эвакуация легковых автомобилей и мототехники любых марок и моделей. Подходит для стандартных поломок, ДТП и авто не на ходу.</h4>
-                            <p className="text-lg mt-3 text-gray-900 font-normal">от 600 грн по городу-от 18 грн / км за пределами Одессы</p>
+                            <p className="text-lg mt-1 text-gray-900 font-normal">от 800 грн по городу-от 50 грн / км за пределами Одессы</p>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@ function PriceCard() {
                             <h2 className="text-xl font-bold max-w-[250px] uppercase">Кроссоверы и минивэны</h2>
                             <h3 className="text-gray-600 max-w-[300px] uppercase mt-2 text-sm">Кроссоверы Минивэны</h3>
                             <h4 className="">Безопасная эвакуация автомобилей повышенной массы и габаритов. Используем усиленные платформы и профессиональные крепления.</h4>
-                            <p className="text-lg mt-3 text-gray-900 font-normal">от 700 грн по городу-от 20 грн / км за пределами Одессы</p>
+                            <p className="text-lg mt-3 text-gray-900 font-normal">от 900 грн по городу-от 50 грн / км за пределами Одессы</p>
                         </div>
                     </div>
 
@@ -69,7 +69,7 @@ function PriceCard() {
                             <h2 className="text-xl font-bold max-w-[250px] uppercase">Внедорожники и микроавтобусы до 3,5 т</h2>
                             <h3 className="text-gray-600 max-w-[300px] uppercase mt-2 text-sm">Микроавтобусы (Газель и аналоги)</h3>
                             <h4 className="">Эвакуация тяжёлых автомобилей и коммерческого транспорта. Подходит для джипов, микроавтобусов и сложных случаев.</h4>
-                            <p className="text-lg mt-3 text-gray-900 font-normal">от 750 грн по городуот 25 грн / км за пределами Одессы</p>
+                            <p className="text-lg mt-1 text-gray-900 font-normal">от 1100 грн по городу-от 50 грн / км за пределами Одессы</p>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ function PriceCard() {
                             <h2 className="text-xl font-bold max-w-[250px] uppercase">Легковые авто и мототехника</h2>
                             <h3 className="text-gray-600 max-w-[300px] uppercase mt-2 text-sm">Легковые автомобили Мотоциклы, квадроциклы, мотоколяски</h3>
                             <h4 className="text-sm font-normal text-black">Перевозка яхт, катеров и маломерных судов Бережная транспортировка по Одессе и области с гарантией сохранности</h4>
-                            <p className="text-lg mt-3 text-gray-900 font-normal">от 600 грн по городу-от 18 грн / км за пределами Одессы</p>
+                            <p className="text-lg mt-3 text-gray-900 font-normal">от 800 грн по городу-от 50 грн / км за пределами Одессы</p>
                         </div>
                     </div>
                 </div>

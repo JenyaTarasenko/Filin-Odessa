@@ -27,14 +27,14 @@ function Questions() {
                     <div className="flex items-center gap-5 w-full sm:w-1/2 max-w-[400px] md:flex-row flex-col">
                         <img src={question} alt="question" className="w-5 h-5 shrink-0" />
                         <h2 className="text-2xl font-medium">
-                            Как быстро приедетэвакуатор ?
+                            Как быстро приедет эвакуатор ?
                         </h2>
                     </div>
 
                     {/* RIGHT */}
                     <div className="flex items-center w-full sm:w-1/2 max-w-[800px]">
                         <h3>
-                            Среднее время подачи от 20 минут по Одессе. Мы работаем круглосуточно, без выходных и праздников.
+                            Среднее время подачи от 10 минут по Одессе. Мы работаем круглосуточно, без выходных и праздников.
                         </h3>
                     </div>
                 </div>

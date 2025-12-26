@@ -43,7 +43,7 @@ function BastCard() {
                         <img src={cardcar} alt="" width={70} height={70} loading="lazy" />
                         <h2 className="uppercase mt-5 max-w-[150px]">Эвакуируем любые авто</h2>
                         <p className="text-gray-600 mt-5 max-w-[200px]">
-                            Работаем по всему городу, ближайший эвакуатор всегда рядом.
+                            Эвакуируем все виды автомобилей: легковые авто, мотоциклы, джипы и микроавтобусы.
                         </p>
                     </div>
                 </div>
