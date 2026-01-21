@@ -13,8 +13,11 @@ SECRET_KEY = 'django-insecure-3wq!-y*!3f=n-@bwyh5xxv6jn=rphxz0abh=!sux261ira!t(d
 
 DEBUG = False
 ALLOWED_HOSTS = [
+    'www.odessa-evacuator.com.ua',
+    'odessa-evacuator.com.ua',
     'FilinOdessa.pythonanywhere.com',
 ]
+SECURE_SSL_REDIRECT = True
 
 
 # Application definition

@@ -16,10 +16,39 @@ import Footer from '../../components/Footer/Footer';
 import FloatingContacts from '../../components/FloatingContacts/FloatingContacts';
 import LineBanner from '../../components/LinerBanner/LinerBanner';
 import RoadLine from '../../components/RoadLine/RoadLine';
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 function HomePage() {
     return (
         <>
+            <Helmet>
+                <title>Эвакуатор FILIN Одесса — 24/7 | Вызов эвакуатора в Одессе и области</title>
+                <meta
+                    name="description"
+                    content="Круглосуточный эвакуатор в Одессе и Одесской области. Быстрый выезд 24/7, эвакуация всех видов авто и мототехники. Бесплатная консультация."
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://odessa-evacuator.com.ua" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Круглосуточный эвакуатор в Одессе и Одесской области" />
+                <meta
+                    property="og:description"
+                    content="Круглосуточный эвакуатор в Одессе и Одесской области. Быстрый выезд, эвакуация любых авто и мототехники."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://odessa-evacuator.com.ua" />
+                <meta property="og:site_name" content="FILIN Эвакуатор Одесса" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Круглосуточный эвакуатор в Одессе и Одесской области" />
+                <meta
+                    name="twitter:description"
+                    content="Круглосуточный эвакуатор в Одессе и Одесской области. Быстрый выезд, эвакуация любых авто и мототехники."
+                />
+            </Helmet>
+
             <NavBar />
             <HeroSection />
             <PriceHero />

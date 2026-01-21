@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import instagram from "../../assets/image/footer-inst.svg";
 import logo from "../../assets/image/footer-logo.svg";
 import { HashLink } from "react-router-hash-link";
+import facebook from "../../assets/image/facebook.svg";
 
 
 function Footer() {
@@ -26,7 +27,14 @@ function Footer() {
                         </div>
                         <Link to="tel:+380663642781" className="flex flex-row gap-3 items-center mt-2">
                             <img src={phone} alt="phone" />
-                            <p className="text-gray-500 text-sm hover:text-yellow-500">+38 (066) 364 27 81</p>
+                            <div className="flex flex-col">
+                                <a href="tel:+380663642781" className="text-gray-500 text-sm hover:text-yellow-500">
+                                    +38 (066) 364 27 81
+                                </a>
+                                <a href="tel:+380937302859" className="text-gray-500 text-sm hover:text-yellow-500">
+                                    +380 (93) 730 28 59
+                                </a>
+                            </div>
                         </Link>
                         <Link to="mailto:evakuatorznamenka@gmail.com" className="flex flex-row gap-3 items-center mt-2">
                             <img src={email} alt="phone" />
@@ -50,9 +58,16 @@ function Footer() {
                     {/* RIGHT */}
                     <div className="flex flex-col gap-3 md:items-center items-start md:mt-[120px] mt-[50px]">
                         <p className="text-sm text-gray-600 hover:text-yellow-500">Мы в соцсетях</p>
-                        <div className="flex gap-4 mt-2">
-                            <a href="https://www.instagram.com/filin.vans/" target="_blank"><img src={instagram} alt="" /></a>
+                        <div className="flex flex-row gap-4 mt-2 justify-center items-center ">
+                            <div className="flex gap-4 mt-2 w-[30px] h-[30px]">
+                                <a href="https://www.instagram.com/filin.vans/" target="_blank"><img src={instagram} alt="" /></a>
+                            </div>
+                            <div className="flex gap-4  w-[30px] h-[30px]">
+                                <a href="https://www.facebook.com/people/%D0%98%D0%B2%D0%B0%D0%BD-%D0%A4%D0%B8%D0%BB%D0%B8%D0%BD/pfbid02z7wDMiWYEerdVMmHHbJAHcD1ojt7SKoMrcQWeccumgXJs5M7SodtVwdBsqhRcLfgl/?ref=_ig_profile_ac" target="_blank"><img src={facebook} alt="" /></a>
+                            </div>
+
                         </div>
+
                     </div>
 
                 </div>

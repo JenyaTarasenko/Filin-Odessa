@@ -13,7 +13,10 @@ import inst from "../../assets/image/inst.svg";
 
 
 
+
+
 const NavBar = () => {
+    const [serviceOpen, setServiceOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation(); // Получаем текущий путь для проверки ховер меню
 
@@ -54,6 +57,9 @@ const NavBar = () => {
         if (path === "/#map" && location.pathname === "/" && location.hash === "#map") {
             return true;
         }
+        if (path === "/znamenka" && location.pathname === "/znamenka") {
+            return true;
+        }
 
 
         return false;
@@ -90,6 +96,59 @@ const NavBar = () => {
                         <HashLink smooth to="/#home" className={getLinkClass("/#home")}>
                             Главная
                         </HashLink>
+                        <li className="relative group">
+                            <span
+                                className="
+                                    cursor-pointer
+                                    hover:text-gray-900 font-medium uppercase
+                                    transition-all duration-200
+                                    hover:underline underline-offset-4
+                                    hover:decoration-yellow-400
+                                "
+                            >
+                                Обслуживание
+                            </span>
+
+                            {/* Выпадающий список */}
+                            <ul
+                                className="
+                                    absolute top-full left-1/2 -translate-x-1/2
+                                    mt-4 w-48 bg-white shadow-xl rounded-xl
+                                    opacity-0 invisible
+                                    group-hover:opacity-100 group-hover:visible
+                                    transition-all duration-200
+                                    flex flex-col py-3
+                                "
+                            >
+                                <li>
+                                    <Link
+                                        to="/znamenka"
+                                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                                    >
+                                        Знаменка
+                                    </Link>
+                                </li>
+                                {/* <li>
+                                    <HashLink
+                                        smooth
+                                        to="/#zone-2"
+                                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                                    >
+                                        Область
+                                    </HashLink>
+                                </li>
+                                <li>
+                                    <HashLink
+                                        smooth
+                                        to="/#zone-3"
+                                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                                    >
+                                        Межгород
+                                    </HashLink>
+                                </li> */}
+                            </ul>
+                        </li>
+
                         <HashLink smooth to="/#about" className={getLinkClass("/#about")}>
                             О нас
                         </HashLink>
@@ -204,6 +263,9 @@ const NavBar = () => {
                         `}
                 >
                     <ul className="flex flex-col gap-10 text-xl font-light items-center">
+
+
+
                         {/* <li><Link to="/" className={getLinkClass("/")}>Главная</Link></li> */}
                         <HashLink smooth to="/#home" className={getLinkClass("/#home")}>
                             Главная
@@ -218,13 +280,64 @@ const NavBar = () => {
                             Цены
                         </HashLink>
 
-                        <HashLink smooth to="/#services-mobile" className={getLinkClass("/#services-mobile")}>
+                        {/* <HashLink smooth to="/#services-mobile" className={getLinkClass("/#services-mobile")}>
                             Услуги
                         </HashLink>
 
                         <HashLink smooth to="/#map" className={getLinkClass("/#map")}>
                             На карте
-                        </HashLink>
+                        </HashLink> */}
+                        <li className="flex flex-col items-center">
+                            <button
+                                onClick={() => setServiceOpen(!serviceOpen)}
+                                className="text-gray-900 font-medium  uppercase"
+                            >
+                                Обслуживание
+                            </button>
+
+                            {/* {serviceOpen && (
+                                <ul className="mt-4 flex flex-col gap-2 text-xl font-light">
+                                    <HashLink smooth to="/#zone-1">Город</HashLink>
+                                    <HashLink smooth to="/#zone-2">Область</HashLink>
+                                    <HashLink smooth to="/#zone-3">Межгород</HashLink>
+                                </ul>
+                            )} */}
+                            {serviceOpen && (
+                                <ul
+                                    className="
+                                        mt-4 flex flex-col gap-2 text-lg font-light
+                                        bg-gray-100
+                                        rounded-xl
+                                        px-6 py-4
+                                        shadow-inner
+                                    "
+                                >
+                                    <Link
+                                        to="/znamenka"
+                                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                                    >
+                                        Знаменка
+                                    </Link>
+
+                                    {/* <HashLink
+                                        smooth
+                                        to="/#zone-2"
+                                        className="py-2 w-full text-center rounded-lg hover:bg-gray-200 transition"
+                                    >
+                                        Область
+                                    </HashLink>
+
+                                    <HashLink
+                                        smooth
+                                        to="/#zone-3"
+                                        className="py-2 w-full text-center rounded-lg hover:bg-gray-200 transition"
+                                    >
+                                        Межгород
+                                    </HashLink> */}
+                                </ul>
+                            )}
+
+                        </li>
                     </ul>
                 </div>
 
