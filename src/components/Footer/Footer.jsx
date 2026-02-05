@@ -71,7 +71,7 @@ function Footer() {
                     </div>
 
                 </div>
-                <hr class="border-t border-yellow-500 w-full mt-20 px-10" />
+                <hr className="border-t border-yellow-500 w-full mt-20 px-10" />
 
                 {/* bottom line */}
                 <div className=" flex justify-start flex-row mt-10 text-left text-xs text-gray-500">

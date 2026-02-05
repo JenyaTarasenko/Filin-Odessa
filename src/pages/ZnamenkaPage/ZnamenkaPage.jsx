@@ -13,6 +13,8 @@ import ZnamenkaImage from '../../components/ZnamenkaImage/ZnamenkaImage';
 import SEOLink from '../../components/SEOLink/SEOLink';
 import Reviews from '../../components/Reviews/Reviews';
 import { Helmet } from "@dr.pogodin/react-helmet";
+import GeoButton from '../../components/GeoButton/GeoButton';
+import TroickiyImage from '../../components/TroickiyImage/TroickiyImage';
 
 
 function ZnamenkaPage() {
@@ -53,7 +55,7 @@ function ZnamenkaPage() {
                         "@type": "LocalBusiness",
                         "name": "Эвакуатор FILIN Знаменка",
                         "url": "https://odessa-evacuator.com.ua/znamenka",
-                        "telephone": ["+380663642781", "+380937302859"],
+                        "telephone": ["+380663642781", "+380937302859", "+380635615665"],
                         "address": {
                             "@type": "PostalAddress",
                             "streetAddress": "ул. Магистральная, 15",
@@ -94,8 +96,12 @@ function ZnamenkaPage() {
             <NavBar />
             <ZnamenkaMain />
             <PriceHero />
+            <div className="flex justify-center items-center mt-10 flex-col gap-5">
+                <GeoButton href="https://www.google.com/maps/place/Filin+%D0%AD%D0%B2%D0%B0%D0%BA%D1%83%D0%B0%D1%82%D0%BE%D1%80+%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%BE%D0%B5+24%2F7/@47.6492317,30.3078798,17z/data=!3m1!4b1!4m6!3m5!1s0x40ceefd40170c81b:0xf610f75abf758fdf!8m2!3d47.6492317!4d30.3078798!16s%2Fg%2F11yxz6gfds?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" name="Мы на карте — Троицкое" />
+            </div>
+            <TroickiyImage />
             <ZnamenkaText />
-            <ZnamenkaImage />
+            {/* <ZnamenkaImage /> */}
             <div className='flex justify-center'>
                 <ButtonRed to="tel:+380663642781" className='mt-10'>Вызвать эвакуатор</ButtonRed>
             </div>

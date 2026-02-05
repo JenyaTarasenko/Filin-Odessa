@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ZnamenkaPage from './pages/ZnamenkaPage/ZnamenkaPage';
 // библиотека для сео   npm install @dr.pogodin/react-helmet
 import { HelmetProvider } from "@dr.pogodin/react-helmet";
+import TroickiyPage from './pages/TroickiyPage/TroickiyPage';
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/znamenka" element={<ZnamenkaPage />} />
+            <Route path="/troickiy" element={<TroickiyPage />} />
           </Routes>
         </Router>
       </HelmetProvider>

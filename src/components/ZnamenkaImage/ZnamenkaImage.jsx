@@ -26,8 +26,8 @@ function ZnamenkaImage() {
 
         <>
             <div className="slider-container mt-5">
-                <div class="slider-track">
-                    <div class="card-img">
+                <div className="slider-track">
+                    <div className="card-img">
                         <img src={slaid1} alt="Эвакуатор Знаменка Одесская область" />
                     </div>
                     <div className="card-img">

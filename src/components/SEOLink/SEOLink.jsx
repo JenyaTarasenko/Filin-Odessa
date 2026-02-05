@@ -19,6 +19,11 @@ function SEOLink() {
                             <img src={mapImage} alt="MapPin" loading="lazy" />
                         </div>
                     </Link>
+                    <Link to="/troickiy" className="text-xl font-normal text-black hover:text-yellow-400 flex flex-row items-center gap-2">Круглосуточный эвакуатор в Троицком
+                        <div className="w-5 h-5">
+                            <img src={mapImage} alt="MapPin" loading="lazy" />
+                        </div>
+                    </Link>
                 </ul>
             </div>
         </>

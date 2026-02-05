@@ -48,9 +48,9 @@ function ZnamenkaMain() {
 
                     <div className="flex flex-col sm:justify-end sm:items-end items-center justify-center w-full h-full pb-10">
                         <div className="flex flex-col max-w-[550px] px-2 gap-3 justify-center">
-                            <a href="tel:+380937302859" className="flex flex-row gap-3 items-center justify-end">
+                            <a href="tel:+380635615655" className="flex flex-row gap-3 items-center justify-end">
                                 <h3 className="text-lg text-yellow-400 font-bold">
-                                    +380937302859
+                                    +380635615655
                                 </h3>
                                 <img src={phone} alt="phone" loading="lazy" className="w-8 h-8" />
                             </a>

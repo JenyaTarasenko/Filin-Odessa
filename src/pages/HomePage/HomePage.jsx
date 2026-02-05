@@ -17,6 +17,11 @@ import FloatingContacts from '../../components/FloatingContacts/FloatingContacts
 import LineBanner from '../../components/LinerBanner/LinerBanner';
 import RoadLine from '../../components/RoadLine/RoadLine';
 import { Helmet } from "@dr.pogodin/react-helmet";
+import GeoButton from '../../components/GeoButton/GeoButton';
+import TroickiyImage from '../../components/TroickiyImage/TroickiyImage';
+import ZnamenkaImage from "../../components/ZnamenkaImage/ZnamenkaImage";
+import SEOLink from '../../components/SEOLink/SEOLink';
+import OdessaImage from '../../components/OdessaImage/OdessaImage';
 
 function HomePage() {
     return (
@@ -52,11 +57,16 @@ function HomePage() {
             <NavBar />
             <HeroSection />
             <PriceHero />
-            <RoadLine />
             <div className='flex justify-center'>
                 <ButtonRed to="tel:+380663642781" className='mt-10'>Расчитать стоимость</ButtonRed>
             </div>
+            <RoadLine />
+            <OdessaImage />
+
             <Bast />
+            <div className="flex justify-center items-center mt-10 flex-col gap-5">
+                <GeoButton href="https://www.google.com/maps/place/Filin+%D0%AD%D0%B2%D0%B0%D0%BA%D1%83%D0%B0%D1%82%D0%BE%D1%80+%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%BE%D0%B5+24%2F7/@47.6492317,30.3078798,17z/data=!3m1!4b1!4m6!3m5!1s0x40ceefd40170c81b:0xf610f75abf758fdf!8m2!3d47.6492317!4d30.3078798!16s%2Fg%2F11yxz6gfds?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" name="Мы на карте — Троицкое" />
+            </div>
             <BastCard />
             <SectionStyle number="01" title="Почему с нами  безопасно и камфортно" />
             <BastSafely />
@@ -68,16 +78,24 @@ function HomePage() {
             </div>
             <SectionStyle number="03" title="Наши цены" />
             <PriceCard />
-            <SectionStyle number="04" title="О нас" />
+            <SectionStyle number="04" title="Эвакуатор Знаменка Одесская область" />
+            <ZnamenkaImage />
+            <SectionStyle number="05" title="О нас" />
             <About />
             <div className='flex justify-center'>
                 <ButtonRed to="tel:+380663642781" className='mt-10'>Вызвать эвакуатор</ButtonRed>
             </div>
             <LineBanner />
-            <SectionStyle number="05" title="Карта эвакуатора Filin" />
+            <SectionStyle number="06" title="Карта эвакуатора Filin" />
             <Map />
-            <SectionStyle number="06" title="Вопросы и ответы" />
+            <SectionStyle number="07" title="Эвакуатор Троицкое" />
+            <TroickiyImage />
+            <div className="flex justify-center items-center mt-10 flex-col gap-5">
+                <GeoButton href="https://www.google.com/maps/place/Filin+%D0%AD%D0%B2%D0%B0%D0%BA%D1%83%D0%B0%D1%82%D0%BE%D1%80+%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%BE%D0%B5+24%2F7/@47.6492317,30.3078798,17z/data=!3m1!4b1!4m6!3m5!1s0x40ceefd40170c81b:0xf610f75abf758fdf!8m2!3d47.6492317!4d30.3078798!16s%2Fg%2F11yxz6gfds?entry=ttu&g_ep=EgoyMDI2MDEyNy4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" name="Мы на карте — Троицкое" />
+            </div>
+            <SectionStyle number="08" title="Вопросы и ответы" />
             <Questions />
+            <SEOLink />
             <RoadLine />
             <Footer />
             <FloatingContacts />

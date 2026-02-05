@@ -127,6 +127,12 @@ const NavBar = () => {
                                     >
                                         Знаменка
                                     </Link>
+                                    <Link
+                                        to="/troickiy"
+                                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                                    >
+                                        Троицкий
+                                    </Link>
                                 </li>
                                 {/* <li>
                                     <HashLink
@@ -314,20 +320,20 @@ const NavBar = () => {
                                 >
                                     <Link
                                         to="/znamenka"
-                                        className="block px-5 py-2 text-sm hover:bg-gray-100"
+                                        className="py-2 w-full text-center rounded-lg hover:bg-gray-200 transition"
                                     >
                                         Знаменка
                                     </Link>
 
-                                    {/* <HashLink
+                                    <HashLink
                                         smooth
-                                        to="/#zone-2"
+                                        to="/troickiy"
                                         className="py-2 w-full text-center rounded-lg hover:bg-gray-200 transition"
                                     >
-                                        Область
+                                        Троицкий
                                     </HashLink>
 
-                                    <HashLink
+                                    {/* <HashLink
                                         smooth
                                         to="/#zone-3"
                                         className="py-2 w-full text-center rounded-lg hover:bg-gray-200 transition"
